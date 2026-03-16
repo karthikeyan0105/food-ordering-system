@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Order Success</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+margin:0;
+}
+
+.container{
+width:500px;
+margin:auto;
+margin-top:120px;
+background:white;
+padding:40px;
+text-align:center;
+border-radius:8px;
+box-shadow:0 3px 12px rgba(0,0,0,0.2);
+}
+
+h1{
+color:#28a745;
+}
+
+button{
+background:#e23744;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+margin-top:20px;
+}
+
+button:hover{
+background:#c92b36;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Order Placed Successfully</h1>
+
+<p><b>Order ID:</b> {{ order_id }}</p>
+
+<p><b>Total Amount:</b> ₹{{ total }}</p>
+
+<form action="/" method="get">
+<button>Place Another Order</button>
+</form>
+
+</div>
+
+</body>
+</html>
+
